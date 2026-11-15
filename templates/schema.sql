@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS tbl_user;
+USE tbl_user;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(100) DEFAULT NULL,
+  password VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (id),
+  UNIQUE KEY username (username)
+);
